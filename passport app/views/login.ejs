@@ -1,0 +1,20 @@
+<%- include('includes/header') %>
+<div class="container login-page">
+<%- messages() %>
+  <form method="post" action="/users/login"  class="form-signin">
+    <h2 class="form-signin-heading">Please sign in</h2>
+    <labelclass="sr-only">Username</label>
+    <input type="text" class="form-control" placeholder="username" name="username" required autofocus>
+    <labelclass="sr-only">Password</label>
+    <input type="password" class="form-control" placeholder="password" name="password" required autofocus>
+      <label>
+        <input type="checkbox" value="remember-me"> Remember me
+      </label>
+
+      <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+    </div>
+    
+  </form>
+
+
+<%- include('includes/footer') %>
